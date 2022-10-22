@@ -63,3 +63,11 @@ function GetEmpHrs() {
   }
   return empHrs;
 }
+//-------------------------UC4--------------------
+
+let totalWage = 0;
+for (let i = 1; i <= 20; i++) {
+  totalWage += GetEmpHrs() * wagePerHour;
+}
+
+console.log(`Total wage for month asuming 20 days: ${totalWage}`);
