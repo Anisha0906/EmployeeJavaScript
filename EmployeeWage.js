@@ -91,3 +91,5 @@ totalWage = totalWorkingHrs * wagePerHour;
 console.log(
   `UC5- Total working days: ${totalDays}, Total working hours: ${totalWorkingHrs} and total wage= ${totalWage}`
 );
+
+console.log("UC-6 Daily wage array: ", dailyWage.toString());
