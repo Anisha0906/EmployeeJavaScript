@@ -144,3 +144,12 @@ function GetTotalWorkingdays() {
 }
 dailyWage.filter((wage) => wage > 0).forEach(GetTotalWorkingdays);
 console.log("UC7-G Total number of working days= ", workingdays);
+
+console.log("UC8-A Map to store day wise wage: ", Array.from(MapDailyWage));
+
+totalWage = 0;
+for (const value of MapDailyWage.values()) {
+  totalWage += value;
+}
+
+console.log("UC8-B Total wage from Map: ", totalWage);
